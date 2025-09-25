@@ -1,0 +1,14 @@
+@checkout-field-validation__border-color: #f00;
+@border-width__base: 1px;
+@border-color__base: #bbb;
+
+& when (@critical) {
+}
+
+& when not (@critical) {
+    @import 'Magento_PaymentServicesPaypal::css/source/_module.less';
+
+    .card-container .field .card-field {
+        height: 40px;
+    }
+}

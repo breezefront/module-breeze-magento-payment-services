@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceBlock name="breeze.js">
+            <arguments>
+                <argument name="bundles" xsi:type="array">
+                    <item name="dynamic" xsi:type="array">
+                        <item name="items" xsi:type="array">
+                            <item name="Magento_PaymentServicesPaypal/js/lib/script-loader" xsi:type="array">
+                                <item name="path" xsi:type="string">Swissup_BreezeMagentoPaymentServices/js/script-loader</item>
+                                <item name="import" xsi:type="array">
+                                    <item name="parent" xsi:type="string">Magento_PaymentServicesPaypal/js/lib/script-loader</item>
+                                </item>
+                            </item>
+                            <item name="scriptLoader" xsi:type="array">
+                                <item name="path" xsi:type="string">Magento_PaymentServicesPaypal/js/lib/script-loader-wrapper</item>
+                                <item name="import" xsi:type="array">
+                                    <item name="parent" xsi:type="string">Magento_PaymentServicesPaypal/js/lib/script-loader</item>
+                                </item>
+                            </item>
+                            <item name="Magento_PaymentServicesPaypal/js/view/payment/paypal-abstract" xsi:type="array">
+                                <item name="path" xsi:type="string">Magento_PaymentServicesPaypal/js/view/payment/paypal-abstract</item>
+                                <item name="import" xsi:type="array">
+                                    <item name="sdk" xsi:type="string">Magento_PaymentServicesPaypal/js/view/payment/actions/get-sdk-params</item>
+                                </item>
+                            </item>
+                            <item name="Magento_PaymentServicesPaypal/js/view/payment/methods/apple-pay" xsi:type="array">
+                                <item name="path" xsi:type="string">Magento_PaymentServicesPaypal/js/view/payment/methods/apple-pay</item>
+                                <item name="import" xsi:type="array">
+                                    <item name="scriptLoader" xsi:type="string">scriptLoader</item>
+                                </item>
+                            </item>
+                            <item name="Magento_PaymentServicesPaypal/js/view/payment/methods/google-pay" xsi:type="array">
+                                <item name="path" xsi:type="string">Magento_PaymentServicesPaypal/js/view/payment/methods/google-pay</item>
+                                <item name="import" xsi:type="array">
+                                    <item name="scriptLoader" xsi:type="string">scriptLoader</item>
+                                </item>
+                            </item>
+                            <item name="Magento_PaymentServicesPaypal/js/view/payment/apple-pay-cart" xsi:type="array">
+                                <item name="path" xsi:type="string">Magento_PaymentServicesPaypal/js/view/payment/apple-pay-cart</item>
+                                <item name="import" xsi:type="array">
+                                    <item name="deps" xsi:type="string">Swissup_BreezeMagentoPaymentServices/js/deps</item>
+                                    <item name="mixin" xsi:type="string">Swissup_BreezeMagentoPaymentServices/js/apple-pay-cart</item>
+                                    <item name="abstract" xsi:type="string">Magento_PaymentServicesPaypal/js/view/payment/paypal-abstract</item>
+                                    <item name="response-error" xsi:type="string">Magento_PaymentServicesPaypal/js/view/errors/response-error</item>
+                                    <item name="apple-pay" xsi:type="string">Magento_PaymentServicesPaypal/js/view/payment/methods/apple-pay</item>
+                                </item>
+                            </item>
+                            <item name="Magento_PaymentServicesPaypal/js/view/payment/google-pay-cart" xsi:type="array">
+                                <item name="path" xsi:type="string">Magento_PaymentServicesPaypal/js/view/payment/google-pay-cart</item>
+                                <item name="import" xsi:type="array">
+                                    <item name="deps" xsi:type="string">Swissup_BreezeMagentoPaymentServices/js/deps</item>
+                                    <item name="mixin" xsi:type="string">Swissup_BreezeMagentoPaymentServices/js/google-pay-cart</item>
+                                    <item name="abstract" xsi:type="string">Magento_PaymentServicesPaypal/js/view/payment/paypal-abstract</item>
+                                    <item name="response-error" xsi:type="string">Magento_PaymentServicesPaypal/js/view/errors/response-error</item>
+                                    <item name="google-pay" xsi:type="string">Magento_PaymentServicesPaypal/js/view/payment/methods/google-pay</item>
+                                </item>
+                            </item>
+                        </item>
+                    </item>
+                </argument>
+            </arguments>
+        </referenceBlock>
+    </body>
+</page>
