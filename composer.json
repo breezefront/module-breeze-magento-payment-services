@@ -2,7 +2,7 @@
     "name": "swissup/module-breeze-magento-payment-services",
     "description": "Adobe Payment Services integration with Breeze frontend",
     "type": "magento2-module",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "license": "MIT",
     "autoload": {
         "files": [
